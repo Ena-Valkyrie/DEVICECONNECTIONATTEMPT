@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+	<style>
+	body{
+	background: black;
+	color: white;
+	text-align: center;
+	font-family: monospace;
+	place-content: center;
+	}
+    #EYE1{
+	height: 140px;
+	display: inline;
+	}
+	#EYE2{
+	height: 140px;
+	display: none;
+	}
+		</style>
+		<title>*The eyes are watching you.</title>
+</head>
+<body>
+<image src="resource/THE_EYE.png" id="EYE1" onclick="AWAKEN();"></image>
+<video src="resource/AWAKEN_EYE.MP4" id="EYE2" autoplay muted loop></video>
+<script>
+var TAUNT = new Audio("resource/TAUNT.mp3");
+var STATIC = new Audio("resource/STATIC.ogg");
+function AWAKEN(){
+TAUNT.play();
+STATIC.play();
+STATIC.loop = true;
+document.getElementById("EYE1").style.display = "none";
+document.getElementById("EYE2").style.display = "inline";
+}
+</script>
+</body>
+</html>

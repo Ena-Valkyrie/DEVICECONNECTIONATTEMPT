@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+	<style>
+	body{
+	background: black;
+	color: white;
+	text-align: center;
+	font-family: monospace;
+	place-content: center;
+	}
+    #HIDDEN{
+	color: black;
+	text-decoration: none;
+	font-size: 18px;
+	}
+	#CALL{
+	display: none;
+	}
+	#CLARIFY{
+	color: black;
+	display: none;
+	}
+		</style>
+    <title>*Don't act like you didn't betrayed us.</title>
+</head>
+<body>
+<h2>Free <span onclick="CALL();">her.</span></h2>
+<h2 id="CALL">The witch cannot be trusted, save her from <span onclick="CLARIFY();">her.</span> </h2>
+<h2 id="CLARIFY" onclick="CLARIFY();">CYCLISTIC INSANITY.</h2>
+</body>
+<script>
+var ITERATION = 0;
+var GUARDIAN = ["Guardian","Watcher","Presevers"];
+function CALL(){
+document.getElementById("CALL").style.display = "block";
+}
+function CLARIFY(){
+ITERATION = ITERATION + 1;
+if(ITERATION == 1){
+let REPEAT = setInterval(function(){
+document.getElementById("CLARIFY").style.display = "block";
+document.getElementById("CLARIFY").style.color = `rgb(255,255,255)`;
+ITERATION = ITERATION + 0.01;
+if(ITERATION > 1.13){
+document.getElementById("CLARIFY").innerHTML = "Second Celestial.";
+}
+}, 1);
+}
+}
+console.log("TRINITY_LEGEND_LOG: \n[08-26-2026 03:28AM]: CULPRIT CYCLISTIC_INSANITY \n");
+</script>
+</html>
